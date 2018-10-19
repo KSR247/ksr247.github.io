@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Petrona');
+
+body {
+    background-image: url("/IMG/main\ background.jpg");
+    background-size: 100%;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+img {
+    width: 450px;
+    height: 300px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Petrona', serif;
+    font-size: 100px;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .30em; /* Adjust as needed */
+    margin: 10px 0 0 10px;
+    animation: typing 5s steps(25, end),
+     typeWriter 0.75s;
+}
+
+
+/*he code below is used to make the typewriter effect*/
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 1000px }
+  }
+
+@keyframes typeWriter {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
