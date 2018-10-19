@@ -1,47 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Petrona');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
 body {
-    background-image: url("/IMG/main\ background.jpg");
-    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.images {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap
+.section1 {
+	height: 100vh;
+	background-image: url("IMG/main_background.jpg"); 
+	background-attachment: fixed;
+	background-size: cover;
 }
 
-img {
-    width: 450px;
-    height: 300px;
+.section2 {
+	background: #ffa216;
+}
+
+.box {
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Chakra Petch', sans-serif;
+	margin: 0;
+}
+
+.card {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   padding: 50px 0;
+   /*color: white;*/
 }
 
 h1 {
-    color: white;
+    color: black;
     font-family: 'Petrona', serif;
     font-size: 100px;
-    text-shadow: 2px 2px blue;
+    text-shadow: 2px 4px #ff7700;
     text-align: center;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .30em; /* Adjust as needed */
-    margin: 10px 0 0 10px;
-    animation: typing 5s steps(25, end),
-     typeWriter 0.75s;
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .3em;
+    animation: typing 3s steps(15, end),
+     typeWriter 3s steps(15);
 }
+
+h2 {
+	text-align: center;
+	font-size: 55px;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+/*.bio {
+	font-family: 'Chakra Petch', sans-serif;
+	text-align: center;
+	color: black;
+	font-size: 30px;*/
+    
+
+	/*align-content: center;;*/
+
 
 
 /*he code below is used to make the typewriter effect*/
 
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 1000px }
+    from { width: 0% }
+    to { width: 835px };
+   
   }
 
 @keyframes typeWriter {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
+    
+    from{border-right-color: white;}
+  to {border-right-color: transparent };
   }
