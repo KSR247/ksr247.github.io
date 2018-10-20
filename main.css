@@ -5,10 +5,13 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background: radial-gradient(
+    	ellipse farthest-side at 100% 100%,
+    	#dbf6c8 20%,#1cafc6 50%,#012690 100%);
 }
 
 .section1 {
-	height: 100vh;
+	height: 50vh;
 	background-image: url("IMG/main_background.jpg"); 
 	background-attachment: fixed;
 	background-size: cover;
@@ -16,6 +19,23 @@ body {
 
 .section2 {
 	background: #ffa216;
+}
+
+.section3 {
+	height: 50vh;
+	background-image: url("IMG/worldcoding.jpg"); 
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.section4 {
+	background: #ffa216;
+
+}
+
+.section4 img {
+	width: 250px;
+	height: 200px;
 }
 
 .box {
@@ -45,22 +65,20 @@ body {
    top: 37px;
    left: 0px;
    padding: 50px 0;
-   background: radial-gradient(
-      circle at top right,
-      yellow,
-      #f06d06
-    );
+    background: radial-gradient(
+    	ellipse farthest-side at 100% 100%,
+    	#dbf6c8 20%,#1cafc6 50%,#012690 100%);
    z-index: 900;
 }
 
 h1 {
-    color: black;
+    color: white;
     font-family: 'Petrona', serif;
     font-size: 100px;
     text-shadow: 2px 4px #ff7700;
     text-align: center;
     overflow: hidden; 
-    border-right: .15em solid white; 
+    border-right: .15em solid #012690; 
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .3em;
@@ -72,6 +90,14 @@ h2 {
 	text-align: center;
 	font-size: 55px;
 	font-family: 'Chakra Petch', sans-serif;
+	color: white;
+}
+
+h3 {
+	text-align: center;
+	font-size: 55px;
+	font-family: 'Chakra Petch', sans-serif;
+	/*color: white;*/
 }
 
 /*.bio {
@@ -85,7 +111,7 @@ h2 {
 
 
 
-/*he code below is used to make the typewriter effect*/
+/*the code below is used to make the typewriter effect*/
 
 
 @keyframes typing {
@@ -96,6 +122,6 @@ h2 {
 
 @keyframes typeWriter {
     
-    from{border-right-color: white;}
+    from{border-right-color: #1cafc6 ;}
   to {border-right-color: transparent };
   }
