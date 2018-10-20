@@ -25,15 +25,32 @@ body {
 	margin: 0;
 }
 
-.card {
+.card img {
    width: 200px;
    height: 200px;
    border-radius: 50%;
    position: absolute;
    top: 0px;
+   left: 11px;
+   padding: 50px 0;
+   z-index: 950;
+}
+
+.circle {
+	box-sizing: border-box;
+	width: 220px;
+   height: 220px;
+   border-radius: 50%;
+   position: absolute;
+   top: 37px;
    left: 0px;
    padding: 50px 0;
-   /*color: white;*/
+   background: radial-gradient(
+      circle at top right,
+      yellow,
+      #f06d06
+    );
+   z-index: 900;
 }
 
 h1 {
