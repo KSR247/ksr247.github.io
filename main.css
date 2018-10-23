@@ -22,10 +22,11 @@ body {
 }
 
 .section3 {
-	height: 50vh;
-	background-image: url("IMG/worldcoding.jpg"); 
+	height: 35vh;
+	background-image: url("IMG/world.jpg"); 
 	background-attachment: fixed;
 	background-size: cover;
+  animation: filter-animation 5s infinite;
 }
 
 .section4 {
@@ -124,4 +125,20 @@ h3 {
     
     from{border-right-color: #1cafc6 ;}
   to {border-right-color: transparent };
+  }
+
+  /*The code below is used to change the hue color. */
+
+  @keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      filter: hue-rotate(100deg);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg);
+    }
   }
