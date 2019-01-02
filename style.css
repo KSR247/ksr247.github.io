@@ -20,7 +20,7 @@ body {
 }
 
 .imageOne {
-  background-image: url("../img/hex.jpg");
+  background-image: url("./img/hex.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,17 +30,17 @@ body {
 }
 
 .imageTwo {
-  background-image: url("../img/space.jpg");
+  background-image: url("./img/space.jpg");
   min-height: 300px;
 }
 
 .imageThree {
-  background-image: url("../img/background2.png");
+  background-image: url("./img/background2.png");
   min-height: 300px;
 }
 
 .imageFour {
-  background-image: url("../img/kasir.jpg");
+  background-image: url("./img/kasir.jpg");
   background-size: 100% 900px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -61,7 +61,7 @@ button {
   font-size: 10rem;
   -webkit-text-stroke: 4px white;
   text-shadow: 4px 4px;
-  background: url(../img/background3.png) repeat;
+  background: url(./img/background3.png) repeat;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
