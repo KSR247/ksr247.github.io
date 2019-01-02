@@ -1,62 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <title>KSR</title>
-</head>
-<body>
-
-  <!-- <div class="card">
-    <img src="IMG/ka.jpg" alt="KasirAbbas">
-  </div>
-  <div class="circle"></div>
-
-   <h1>Kasir Abbas</h1>
-   
-   <h2>Welcome to my Portfolio</h2> -->
-
-   <div class="section1 box">
-
-    <div class="card">
-      <img src="IMG/ka.jpg" alt="KasirAbbas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kasir Abbas</title>
+  </head>
+  <body>
+    <div class="imageOne" id="imageOne" onload="bgImg()">
+      <div class="nameTag">
+        <button type="button" onclick="bgImg()">
+          <h1 id="name" class="name">KASIR ABBAS</h1>
+        </button>
+        <br />
+        <span id="greeting">
+          <a
+            href=""
+            class="typewrite"
+            id="greeting"
+            data-type="[ &quot;Developer.&quot;, &quot;Designer.&quot;, &quot;Engineer.&quot; ]"
+          >
+          </a
+        ></span>
+      </div>
     </div>
-    <div class="circle"></div>
-  
-     <h1>Kasir Abbas</h1>
-     
-     <h2>Welcome to my Portfolio</h2>
 
-   </div>
-   
-   
+    <section class="section section-light">
+      <h2>ABOUT ME</h2>
+      <p>
+        Hello! Welcome to my portfolio. I'm a Manchester based developer, with a
+        great passion for code, technology and parrots. Having completed the
+        CodeNation 12 weeks bootcamp. I have in-depth knowledge of HTML5, CSS3,
+        JavaScript, NodeJs and React. I’m always open to acquiring new skills to
+        better myself. I pride myself in building projects and outstanding
+        applications using clean, well-commented and structured code.
+      </p>
+      <p class="emoji">👨🏽‍🎓👨🏽‍💻</p>
+    </section>
 
-   <div class="section2 box">
+    <div class="imageTwo"></div>
 
-    <h3>Software Developer</h3>
+    <section class="section section-dark">
+      <h2>Projects</h2>
+      <div class="hexagons">
+        <ul id="hexGrid">
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img
+                src="../img/projects/spaceInvaders.png"
+                alt="spaceInvaders"
+              />
+              <h1>Space Invaders</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../img/projects/engUrdu.png" alt="Urdu Dictionary" />
+              <h1>English to Urdu</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../img/projects/Nasa.png" alt="Nasa" />
+              <h1>Nasa image API</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="https://github.com/KSR247" target="_blank">
+              <img src="../img/projects/gitHub.png" alt="" />
+              <h1>GitHub</h1>
+              <p>More Projects</p>
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../img/projects/airport.png" alt="Airport" />
+              <h1>Airport Runway</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
 
-     <p>Hello! Welcome to my portfolio. I'm a Manchester based developer, with a great passion for code, tech and parrots. Currently completing the CodeNation bootcamp.</p>
-     <p>I have in depth knowledge of HTML5, CSS3, JavaScript and design. With a desire to learn, no matter how hard it may be, as knowledge is building blocks to better socities.</p>
-   </div>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="./img/projects/wacksAMoes.png" alt="wack a Moes" />
+              <h1>Wack-A-Moes</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="./img/projects/dice.jpg" alt="Dice game" />
+              <h1>Dice Game</h1>
+              <p>Code | Demo</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-   <div class="section3 box"></div>
-   <div class="section4 box">
-     <h3>Showcase</h3>
-     <img src="IMG/Animation.png" alt="">
-     <img src="IMG/codeLinks.png" alt="">
+    <div class="imageThree"></div>
 
-   </div>
+    <section class="section section-dark">
+      <h2>Contact Me</h2>
+      <p></p>
+    </section>
 
-   <!-- <div class="images">
-       <img src="../IMG/Animation.png" alt="">
-       <img src="" alt="">
-       <img src="" alt="">
-       <img src="" alt="">
-       <img src="" alt="">
-       <img src="" alt="">
-   </div> -->
-</body>
+    <div class="imageFour">
+      <div class="lastPage"><span class="border"> Kasir Abbas </span></div>
+    </div>
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
 </html>
