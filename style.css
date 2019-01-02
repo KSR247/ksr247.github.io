@@ -100,16 +100,6 @@ p {
   font-size: 2rem;
 }
 
-.emoji {
-  font-size: 2rem;
-  size: 2rem;
-}
-span.emoji {
-  font-size: 30px;
-  vertical-align: middle;
-  line-height: 2;
-}
-
 .lastPage {
   position: absolute;
   top: 50%;
@@ -129,6 +119,17 @@ span.emoji {
 
 .lastPage .border.trans {
   background-color: transparent;
+}
+
+.fab {
+  color: white;
+  font-size: 8rem;
+}
+
+.link a:link {
+  color: white;
+  font-size: 4rem;
+  text-decoration: none;
 }
 
 /* Hexagons */
@@ -255,11 +256,13 @@ span.emoji {
   clear: left;
 }
 
+/* settings for mobile using media */
+
 @media (max-width: 1200px) {
   /* <- 1-2  hexagons per row */
   .hex {
     width: 49.5%; /* = (100-1) / 2 */
-    padding-bottom: 57.158%; /* =  width / sin(60) */
+    padding-bottom: 70%; /* =  width / sin(60) */
   }
   .hex:nth-child(3n + 1) {
     transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -283,7 +286,7 @@ span.emoji {
 
 @media (max-width: 400px) {
   #hexGrid {
-    font-size: 13px;
+    font-size: 7px;
   }
 }
 
